@@ -57,7 +57,7 @@ double[,] RandomArray2d(int rows, int columns)
     return array;
 }
 
-void Find(double[,] array, int rows, int columns) // не понял как задать условие проверки существует ли элемент в массиве
+void Find(double[,] array, int rows, int columns)
 {
     if(rows < array.GetLength(0) && columns < array.GetLength(1) ) Console.Write($"Значение array[{rows}, {columns}] = {array[rows, columns]}");
     else Console.Write($"Значения array[{rows}, {columns}] - не существует");
