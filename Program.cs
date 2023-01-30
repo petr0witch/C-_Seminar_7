@@ -5,7 +5,7 @@
 // 0,5 7 -2 -0,2
 // 1 -3,3 8 -9,9
 // 8 7,8 -7,1 9
-
+/*
 double[,] RandomArray2d()
 {
     Console.WriteLine("Генерация случайного двухмерного массива");
@@ -35,7 +35,7 @@ void Show(double[,] array)
 }
 
 Show(RandomArray2d());
-
+*/
 
 // Задача 50. Напишите программу, которая на вход принимает позиции элемента в двумерном массиве, 
 // и возвращает значение этого элемента или же указание, что такого элемента нет.
@@ -59,8 +59,8 @@ double[,] RandomArray2d(int rows, int columns)
 
 void Find(double[,] array, int rows, int columns) // не понял как задать условие проверки существует ли элемент в массиве
 {
-    if(array[rows, columns] > 0) Console.Write($"Значение array[{rows},{columns}] = {array[rows, columns]}");
-    else Console.Write($"Значения array{rows},{columns} - не существует");
+    if(rows < array.GetLength(0) && columns < array.GetLength(1) ) Console.Write($"Значение array[{rows}, {columns}] = {array[rows, columns]}");
+    else Console.Write($"Значения array[{rows}, {columns}] - не существует");
 }
 
 void Show(double[,] array)
@@ -97,6 +97,7 @@ Find(newArray, i, j);
 // 8 4 2 4
 // Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
 
+/*
 int[,] array = new int[,] {
             {1, 4, 7, 2},
             {5, 9, 2, 3},
@@ -118,3 +119,4 @@ void Median(int[,] array)
 }
 
 Median(array);
+*/
